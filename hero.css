@@ -1,0 +1,242 @@
+/* common shear style */
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+.text-primary{
+    color: #FD6E0A;
+}
+.btn-primary{
+    border-radius: 5px;
+    background: #FD6E0A;
+    border: 0;
+    color: var(--White-Color, #FFF);
+    font-size: 20px;
+    font-weight: 700;
+    padding: 18px 35px;
+}
+.section-title{
+color:  #181818;
+text-align: center;
+font-size: 35px;
+font-weight: 700;
+}
+.section-description{
+color:  #757575;
+text-align: center;
+font-size: 18px;
+font-weight: 400;
+line-height: 30px; /* 166.667% */
+}
+/* nav releted style */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 200px;
+}.nav-title{
+    color:#181818;
+
+font-size: 45px;
+font-weight: 800;
+}
+
+nav > ul {
+    display: flex;
+    align-items: center;
+}
+nav li{
+    list-style: none;
+    margin-right: 50px;
+}
+nav a{
+    text-decoration: none;
+    color: #474747;
+}
+/* header releted style */
+.header{
+    background-color: #FFF8F3;
+    background-image: url(images/header_bg.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+.banner{
+    padding: 30px 30px 0px 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.banner-content{
+    max-width: 500px;
+}
+.banner .profile-pic{
+    width: 500px;
+}
+.banner-greeting{
+    color:#474747;
+    font-size: 45px;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+.banner-title{
+color:  #181818;
+font-size: 85px;
+font-weight: 700;
+margin-top: 5px;
+margin-bottom: 20px;
+}
+/* main section  */
+main{
+    width: 71%;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+main section {
+    margin-top: 130px;
+}
+/* about section */
+.about{
+    padding: 130px ;
+    border-radius: 10px;
+    background: #FFF8F3;
+    margin: 130px;
+}
+.about-info-continer{
+    display: flex;
+    justify-content: space-around;
+}
+.about-info{
+    text-align: center;
+}
+.info-title{
+    color: var(--Dark-03, #757575);
+text-align: center;
+font-family: Open Sans;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 30px; /* 150% */
+}
+#what-i-do{
+    padding: 30px 150px;}
+/* }skills related style */
+.skills-continer{
+display: flex;
+gap: 24px;
+
+}
+.skills{
+    padding: 30px;
+    border-radius: 5px;
+background: #FFF;
+box-shadow: 0px 6px 50px 0px rgba(0, 0, 0, 0.06);
+}
+.skills-description{
+    color: #757575;
+}
+.resume-column-title{
+    color: var(--Dark-02, #474747);
+font-family: Open Sans;
+font-size: 30px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+.resume-continer{
+    display: flex;
+    gap: 50px;
+}
+.resume-item{
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+.resume-item-inistitute,.resume-item-description{
+    color: var(--Dark-03, #757575);
+font-family: Open Sans;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 28px; /* 175% */
+}
+.resume-column-title{
+    color: var(--Dark-02, #474747);
+font-family: Open Sans;
+font-size: 25px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+margin-bottom: 10px;
+}
+.resume-continer hr{
+    margin: 30px 0;
+}
+.download-cv{
+    text-align: center;
+    margin-top: 50px;
+}
+/* footer section */
+footer{
+    display: flex;
+    gap: 100px;
+    background: #FFF8F3;
+    padding: 130px 230px;
+    margin-top: 100px;
+}
+.footer-column{
+    width: 50%;
+}
+.contact input[type="text"], input[type="email"], textarea{
+    display: block;
+    margin-bottom: 24px;
+    padding: 18px 35px;
+    color:  #757575;
+    border-radius: 5px;
+background:  #FFF;
+border: 0;
+width: 100%;
+
+
+
+}
+.socil-link a{
+    margin-right: 25px;
+}
+.hide{
+    display: none;
+}
+/* Responsive style */
+/* Mobole Devices */
+@media screen and (max-width: 576px) {
+    .skills-continer,.resume-continer,nav > ul,footer,about-info-continer,.banner,nav,.about-info-continer{
+    flex-direction: column;}
+}
+.header{
+    background-image: none;
+}
+#what-i-do{
+    padding: 20px ;
+}
+.banner-content.banner .profile-pic{
+    width: 100%;
+}
+footer,.about,.banner{
+    padding: 10px;
+}
+.footer-column{
+    width: 100%;
+}
+.contact input[type="text"], input[type="email"], textarea{
+    width: 70%;
+    
+}
+main{
+    max-width: 1140px;
+}
+.about{
+    margin: 10px;
+}
+@media screen and (min-width: 576px) and (max-width: 960px){
+
+    footer{
+        padding: 30px;
+    }
+}
